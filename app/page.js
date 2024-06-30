@@ -1,3 +1,11 @@
+import Link from 'next/link';
+import Navigation from './components/Navigation';
+
 export default function Home() {
-    return <h1>Welcome to Wild Oasis</h1>;
+    return (
+        <div>
+            <Navigation />
+            <h1>Welcome to Wild Oasis</h1>
+        </div>
+    );
 }

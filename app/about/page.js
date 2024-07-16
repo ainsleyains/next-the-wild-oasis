@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import image1 from '@/public/about-1.jpg';
+import image2 from '@/public/about-2.jpg';
 
 export const metadata = {
     title: 'About',
@@ -28,7 +30,6 @@ export default function About() {
                     </p>
                 </div>
             </div>
-
             <div className='col-span-2'>
                 <Image
                     src={image1}
@@ -37,7 +38,7 @@ export default function About() {
                     quality={80}
                 />
             </div>
-
+            {/* alternative way to upload image (when using url not import) 1.set a container for image 2.container set relative ans aspect-square to get respinsive image 3.add fill attribute to image 4. add classname='object-cover 5.placeholder and quality can be used with static image not image via url*/}
             <div className='relative aspect-square col-span-2'>
                 <Image
                     src='/about-2.jpg'
@@ -46,7 +47,6 @@ export default function About() {
                     alt='Family that manages The Wild Oasis'
                 />
             </div>
-
             <div className='col-span-3'>
                 <h1 className='text-4xl mb-10 text-accent-400 font-medium'>Managed by our family since 1962</h1>
 

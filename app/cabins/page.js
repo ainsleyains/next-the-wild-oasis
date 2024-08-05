@@ -16,6 +16,7 @@ export default async function Cabins() {
                 private hot tub under the stars. Enjoy nature&apos;s beauty in your own little home away from home. The
                 perfect spot for a peaceful, calm vacation. Welcome to paradise.
             </p>
+            {/* suspense needs to be outside of the component */}
             <Suspense fallback={<Spinner />}>
                 <CabinList />
             </Suspense>
